@@ -1,6 +1,10 @@
 # Sy23-24
 Code for first year software class <br>
 <b>1/4/24</b> - Setting up repository <br>
+<<<<<<< HEAD
 <b>1/5/24</b> - Updating Local <br>
 <b>1/8/24</b> - Monday Update
+=======
+<b>1/5/24</b> - Updating Local
+>>>>>>> main
 
