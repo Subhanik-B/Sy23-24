@@ -38,6 +38,10 @@ Partial Class Form1
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.First = New System.Windows.Forms.Button()
+        Me.Next_Button = New System.Windows.Forms.Button()
+        Me.Previous = New System.Windows.Forms.Button()
+        Me.Last = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -165,11 +169,51 @@ Partial Class Form1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'First
+        '
+        Me.First.Location = New System.Drawing.Point(54, 70)
+        Me.First.Name = "First"
+        Me.First.Size = New System.Drawing.Size(94, 29)
+        Me.First.TabIndex = 13
+        Me.First.Text = "First"
+        Me.First.UseVisualStyleBackColor = True
+        '
+        'Next_Button
+        '
+        Me.Next_Button.Location = New System.Drawing.Point(54, 114)
+        Me.Next_Button.Name = "Next_Button"
+        Me.Next_Button.Size = New System.Drawing.Size(94, 29)
+        Me.Next_Button.TabIndex = 14
+        Me.Next_Button.Text = "Next"
+        Me.Next_Button.UseVisualStyleBackColor = True
+        '
+        'Previous
+        '
+        Me.Previous.Location = New System.Drawing.Point(54, 162)
+        Me.Previous.Name = "Previous"
+        Me.Previous.Size = New System.Drawing.Size(94, 29)
+        Me.Previous.TabIndex = 15
+        Me.Previous.Text = "Previous"
+        Me.Previous.UseVisualStyleBackColor = True
+        '
+        'Last
+        '
+        Me.Last.Location = New System.Drawing.Point(54, 211)
+        Me.Last.Name = "Last"
+        Me.Last.Size = New System.Drawing.Size(94, 29)
+        Me.Last.TabIndex = 16
+        Me.Last.Text = "Last"
+        Me.Last.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Last)
+        Me.Controls.Add(Me.Previous)
+        Me.Controls.Add(Me.Next_Button)
+        Me.Controls.Add(Me.First)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Field5)
         Me.Controls.Add(Me.Field4)
@@ -208,4 +252,8 @@ Partial Class Form1
     Friend WithEvents SaveToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents First As Button
+    Friend WithEvents Next_Button As Button
+    Friend WithEvents Previous As Button
+    Friend WithEvents Last As Button
 End Class
