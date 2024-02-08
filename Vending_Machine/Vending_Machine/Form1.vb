@@ -1,5 +1,5 @@
 ﻿Public Class Form1
-    Dim CS As New Coin_Slot
+    Dim WithEvents CS As New Coin_Slot
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         CS.Insert_Nickels()
         TextBox1.Text = CS.Total.ToString("C2")
@@ -15,5 +15,32 @@
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         CS.Insert_Dollars()
         TextBox1.Text = CS.Total.ToString("C2")
+    End Sub
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        CS.Coin_Return()
+        TextBox1.Text = CS.Total.ToString("C2")
+    End Sub
+
+    Private Sub CS_CoinReturnEvent(d As Integer, q As Integer, di As Integer, n As Integer) Handles CS.CoinReturnEvent
+        If d > 0 Then
+            PictureBox6.Visible = True
+        Else
+            PictureBox6.Visible = False
+        End If
+        If q > 0 Then
+            PictureBox5.Visible = True
+        Else
+            PictureBox5.Visible = False
+        End If
+        If di > 0 Then
+            PictureBox7.Visible = True
+        Else
+            PictureBox7.Visible = False
+        End If
+        If n > 0 Then
+            PictureBox8.Visible = True
+        Else
+            PictureBox8.Visible = False
+        End If
     End Sub
 End Class

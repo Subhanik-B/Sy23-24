@@ -1,4 +1,7 @@
 ﻿Public Class Coin_Slot
+
+    Public Event CoinReturnEvent(d As Integer, q As Integer, di As Integer, n As Integer)
+
     Public ReadOnly Property Total As Decimal
         Get
             Return (Nickels * 0.05) + (Dimes * 0.1) + (Quarters * 0.25) + Dollars
@@ -19,5 +22,12 @@
     End Sub
     Public Sub Insert_Nickels()
         Nickels += 1
+    End Sub
+    Public Sub Coin_Return()
+        RaiseEvent CoinReturnEvent(Dollars, Quarters, Dimes, Nickels)
+        Dollars = 0
+        Quarters = 0
+        Dimes = 0
+        Nickels = 0
     End Sub
 End Class
