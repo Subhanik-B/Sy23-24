@@ -96,6 +96,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Product_Control.Designer.vb">
+      <DependentUpon>Product_Control.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Product_Control.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -106,6 +112,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product_Control.resx">
+      <DependentUpon>Product_Control.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -131,6 +140,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\download %2815%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2816%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2817%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2818%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2819%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62737__97488.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
