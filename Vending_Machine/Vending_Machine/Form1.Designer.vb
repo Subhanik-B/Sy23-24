@@ -29,6 +29,10 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Product_Control13 = New Vending_Machine.Product_Control()
+        Me.Product_Control14 = New Vending_Machine.Product_Control()
+        Me.Product_Control15 = New Vending_Machine.Product_Control()
+        Me.Product_Control16 = New Vending_Machine.Product_Control()
         Me.Product_Control9 = New Vending_Machine.Product_Control()
         Me.Product_Control5 = New Vending_Machine.Product_Control()
         Me.Product_Control1 = New Vending_Machine.Product_Control()
@@ -47,6 +51,8 @@ Partial Class Form1
         Me.Product_Control7 = New Vending_Machine.Product_Control()
         Me.Product_Control8 = New Vending_Machine.Product_Control()
         Me.Product_Control10 = New Vending_Machine.Product_Control()
+        Me.Product_Control11 = New Vending_Machine.Product_Control()
+        Me.Product_Control12 = New Vending_Machine.Product_Control()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -119,6 +125,54 @@ Partial Class Form1
         Me.Button5.Text = "Return"
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'Product_Control13
+        '
+        Me.Product_Control13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Product_Control13.Location = New System.Drawing.Point(-64, 691)
+        Me.Product_Control13.Name = "Product_Control13"
+        Me.Product_Control13.ProductID = "D1"
+        Me.Product_Control13.ProductImage = Global.Vending_Machine.My.Resources.Resources._1547251674_513E6I4SPtL
+        Me.Product_Control13.ProductPrice = New Decimal(New Integer() {150, 0, 0, 131072})
+        Me.Product_Control13.PropertyCount = 10
+        Me.Product_Control13.Size = New System.Drawing.Size(243, 216)
+        Me.Product_Control13.TabIndex = 27
+        '
+        'Product_Control14
+        '
+        Me.Product_Control14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Product_Control14.Location = New System.Drawing.Point(118, 691)
+        Me.Product_Control14.Name = "Product_Control14"
+        Me.Product_Control14.ProductID = "D2"
+        Me.Product_Control14.ProductImage = Global.Vending_Machine.My.Resources.Resources._71kOsITKSkL__AC_UF1000_1000_QL80_
+        Me.Product_Control14.ProductPrice = New Decimal(New Integer() {150, 0, 0, 131072})
+        Me.Product_Control14.PropertyCount = 10
+        Me.Product_Control14.Size = New System.Drawing.Size(243, 216)
+        Me.Product_Control14.TabIndex = 28
+        '
+        'Product_Control15
+        '
+        Me.Product_Control15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Product_Control15.Location = New System.Drawing.Point(315, 691)
+        Me.Product_Control15.Name = "Product_Control15"
+        Me.Product_Control15.ProductID = "D3"
+        Me.Product_Control15.ProductImage = Global.Vending_Machine.My.Resources.Resources.GUEST_d990f8d3_d473_4859_af95_1c3374017c45
+        Me.Product_Control15.ProductPrice = New Decimal(New Integer() {150, 0, 0, 131072})
+        Me.Product_Control15.PropertyCount = 10
+        Me.Product_Control15.Size = New System.Drawing.Size(243, 216)
+        Me.Product_Control15.TabIndex = 29
+        '
+        'Product_Control16
+        '
+        Me.Product_Control16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Product_Control16.Location = New System.Drawing.Point(508, 691)
+        Me.Product_Control16.Name = "Product_Control16"
+        Me.Product_Control16.ProductID = "D4"
+        Me.Product_Control16.ProductImage = Global.Vending_Machine.My.Resources.Resources._71CcmSuTAnL
+        Me.Product_Control16.ProductPrice = New Decimal(New Integer() {150, 0, 0, 131072})
+        Me.Product_Control16.PropertyCount = 10
+        Me.Product_Control16.Size = New System.Drawing.Size(243, 216)
+        Me.Product_Control16.TabIndex = 30
+        '
         'Product_Control9
         '
         Me.Product_Control9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
@@ -158,7 +212,7 @@ Partial Class Form1
         'PictureBox8
         '
         Me.PictureBox8.Image = Global.Vending_Machine.My.Resources.Resources._2005nickel_obverse
-        Me.PictureBox8.Location = New System.Drawing.Point(620, 801)
+        Me.PictureBox8.Location = New System.Drawing.Point(597, 993)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(100, 50)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -169,7 +223,7 @@ Partial Class Form1
         'PictureBox7
         '
         Me.PictureBox7.Image = Global.Vending_Machine.My.Resources.Resources.download__14_
-        Me.PictureBox7.Location = New System.Drawing.Point(514, 801)
+        Me.PictureBox7.Location = New System.Drawing.Point(491, 993)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(100, 50)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -180,7 +234,7 @@ Partial Class Form1
         'PictureBox6
         '
         Me.PictureBox6.Image = Global.Vending_Machine.My.Resources.Resources.download__15_
-        Me.PictureBox6.Location = New System.Drawing.Point(302, 801)
+        Me.PictureBox6.Location = New System.Drawing.Point(279, 993)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(100, 50)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -191,7 +245,7 @@ Partial Class Form1
         'PictureBox5
         '
         Me.PictureBox5.Image = Global.Vending_Machine.My.Resources.Resources._51PWs1rlEyL__AC_UF894_1000_QL80_
-        Me.PictureBox5.Location = New System.Drawing.Point(408, 801)
+        Me.PictureBox5.Location = New System.Drawing.Point(385, 993)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(100, 50)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -323,11 +377,40 @@ Partial Class Form1
         Me.Product_Control10.Size = New System.Drawing.Size(243, 216)
         Me.Product_Control10.TabIndex = 24
         '
+        'Product_Control11
+        '
+        Me.Product_Control11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Product_Control11.Location = New System.Drawing.Point(315, 469)
+        Me.Product_Control11.Name = "Product_Control11"
+        Me.Product_Control11.ProductID = "C3"
+        Me.Product_Control11.ProductImage = Global.Vending_Machine.My.Resources.Resources._812tZPyk0fL__AC_UF894_1000_QL80_
+        Me.Product_Control11.ProductPrice = New Decimal(New Integer() {150, 0, 0, 131072})
+        Me.Product_Control11.PropertyCount = 10
+        Me.Product_Control11.Size = New System.Drawing.Size(243, 216)
+        Me.Product_Control11.TabIndex = 25
+        '
+        'Product_Control12
+        '
+        Me.Product_Control12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Product_Control12.Location = New System.Drawing.Point(508, 469)
+        Me.Product_Control12.Name = "Product_Control12"
+        Me.Product_Control12.ProductID = "C4"
+        Me.Product_Control12.ProductImage = Global.Vending_Machine.My.Resources.Resources._00028400325073_C1C1
+        Me.Product_Control12.ProductPrice = New Decimal(New Integer() {150, 0, 0, 131072})
+        Me.Product_Control12.PropertyCount = 10
+        Me.Product_Control12.Size = New System.Drawing.Size(243, 216)
+        Me.Product_Control12.TabIndex = 26
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1082, 863)
+        Me.BackgroundImage = Global.Vending_Machine.My.Resources.Resources._41g16UXvZSL__AC_UF894_1000_QL80_
+        Me.ClientSize = New System.Drawing.Size(1082, 1055)
+        Me.Controls.Add(Me.Product_Control13)
+        Me.Controls.Add(Me.Product_Control14)
+        Me.Controls.Add(Me.Product_Control15)
+        Me.Controls.Add(Me.Product_Control16)
         Me.Controls.Add(Me.Product_Control9)
         Me.Controls.Add(Me.Product_Control5)
         Me.Controls.Add(Me.Product_Control1)
@@ -353,6 +436,8 @@ Partial Class Form1
         Me.Controls.Add(Me.Product_Control7)
         Me.Controls.Add(Me.Product_Control8)
         Me.Controls.Add(Me.Product_Control10)
+        Me.Controls.Add(Me.Product_Control11)
+        Me.Controls.Add(Me.Product_Control12)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
@@ -393,4 +478,10 @@ Partial Class Form1
     Friend WithEvents Product_Control8 As Product_Control
     Friend WithEvents Product_Control9 As Product_Control
     Friend WithEvents Product_Control10 As Product_Control
+    Friend WithEvents Product_Control11 As Product_Control
+    Friend WithEvents Product_Control12 As Product_Control
+    Friend WithEvents Product_Control13 As Product_Control
+    Friend WithEvents Product_Control14 As Product_Control
+    Friend WithEvents Product_Control15 As Product_Control
+    Friend WithEvents Product_Control16 As Product_Control
 End Class
