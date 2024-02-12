@@ -43,4 +43,16 @@
             PictureBox8.Visible = False
         End If
     End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Select Case ID_TextBox.Text
+            Case Product_Control1.ProductID
+                Product_Control1.buy()
+            Case Product_Control2.ProductID
+                Product_Control2.buy
+            Case Else
+
+        End Select
+        Product_Control1.buy()
+    End Sub
 End Class

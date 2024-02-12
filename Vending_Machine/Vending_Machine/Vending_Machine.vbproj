@@ -171,5 +171,26 @@
   <ItemGroup>
     <None Include="Resources\62737__97488.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\812tZPyk0fL._AC_UF894,1000_QL80_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00028400325073_C1C1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1547251674-513E6I4SPtL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71kOsITKSkL._AC_UF1000,1000_QL80_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GUEST_d990f8d3-d473-4859-af95-1c3374017c45.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71CcmSuTAnL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41g16UXvZSL._AC_UF894,1000_QL80_.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -53,6 +53,9 @@ Partial Class Form1
         Me.Product_Control10 = New Vending_Machine.Product_Control()
         Me.Product_Control11 = New Vending_Machine.Product_Control()
         Me.Product_Control12 = New Vending_Machine.Product_Control()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.ID_TextBox = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -118,7 +121,7 @@ Partial Class Form1
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(826, 232)
+        Me.Button5.Location = New System.Drawing.Point(826, 249)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 23)
         Me.Button5.TabIndex = 10
@@ -212,7 +215,7 @@ Partial Class Form1
         'PictureBox8
         '
         Me.PictureBox8.Image = Global.Vending_Machine.My.Resources.Resources._2005nickel_obverse
-        Me.PictureBox8.Location = New System.Drawing.Point(597, 993)
+        Me.PictureBox8.Location = New System.Drawing.Point(596, 936)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(100, 50)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -223,7 +226,7 @@ Partial Class Form1
         'PictureBox7
         '
         Me.PictureBox7.Image = Global.Vending_Machine.My.Resources.Resources.download__14_
-        Me.PictureBox7.Location = New System.Drawing.Point(491, 993)
+        Me.PictureBox7.Location = New System.Drawing.Point(490, 936)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(100, 50)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -234,7 +237,7 @@ Partial Class Form1
         'PictureBox6
         '
         Me.PictureBox6.Image = Global.Vending_Machine.My.Resources.Resources.download__15_
-        Me.PictureBox6.Location = New System.Drawing.Point(279, 993)
+        Me.PictureBox6.Location = New System.Drawing.Point(278, 936)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(100, 50)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -245,7 +248,7 @@ Partial Class Form1
         'PictureBox5
         '
         Me.PictureBox5.Image = Global.Vending_Machine.My.Resources.Resources._51PWs1rlEyL__AC_UF894_1000_QL80_
-        Me.PictureBox5.Location = New System.Drawing.Point(385, 993)
+        Me.PictureBox5.Location = New System.Drawing.Point(384, 936)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(100, 50)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -401,12 +404,40 @@ Partial Class Form1
         Me.Product_Control12.Size = New System.Drawing.Size(243, 216)
         Me.Product_Control12.TabIndex = 26
         '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(826, 220)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.TabIndex = 31
+        Me.Button6.Text = "Buy"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'ID_TextBox
+        '
+        Me.ID_TextBox.Location = New System.Drawing.Point(826, 278)
+        Me.ID_TextBox.Name = "ID_TextBox"
+        Me.ID_TextBox.Size = New System.Drawing.Size(100, 22)
+        Me.ID_TextBox.TabIndex = 32
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(797, 284)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(23, 16)
+        Me.Label2.TabIndex = 33
+        Me.Label2.Text = "ID:"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Vending_Machine.My.Resources.Resources._41g16UXvZSL__AC_UF894_1000_QL80_
-        Me.ClientSize = New System.Drawing.Size(1082, 1055)
+        Me.ClientSize = New System.Drawing.Size(1082, 996)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.ID_TextBox)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Product_Control13)
         Me.Controls.Add(Me.Product_Control14)
         Me.Controls.Add(Me.Product_Control15)
@@ -484,4 +515,7 @@ Partial Class Form1
     Friend WithEvents Product_Control14 As Product_Control
     Friend WithEvents Product_Control15 As Product_Control
     Friend WithEvents Product_Control16 As Product_Control
+    Friend WithEvents Button6 As Button
+    Friend WithEvents ID_TextBox As TextBox
+    Friend WithEvents Label2 As Label
 End Class

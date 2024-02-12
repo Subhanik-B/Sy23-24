@@ -9,4 +9,12 @@
         ID_Label.Text = ProductID
         Price_Label.Text = ProductPrice.ToString("C2")
     End Sub
+    Public Sub buy()
+        If PropertyCount > 0 Then
+            PropertyCount -= 1
+        End If
+        If PropertyCount = 0 Then
+            PictureBox1.Image = Nothing
+        End If
+    End Sub
 End Class
