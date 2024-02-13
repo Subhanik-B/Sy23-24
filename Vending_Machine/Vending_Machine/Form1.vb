@@ -47,12 +47,57 @@
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         Select Case ID_TextBox.Text
             Case Product_Control1.ProductID
-                Product_Control1.buy()
-            Case Product_Control2.ProductID
-                Product_Control2.buy
-            Case Else
+                CS.Buy(Product_Control1)
 
+            Case Product_Control2.ProductID
+                CS.Buy(Product_Control2)
+
+            Case Product_Control3.ProductID
+                CS.Buy(Product_Control3)
+
+            Case Product_Control4.ProductID
+                CS.Buy(Product_Control4)
+
+            Case Product_Control5.ProductID
+                CS.Buy(Product_Control5)
+
+            Case Product_Control6.ProductID
+                CS.Buy(Product_Control6)
+
+            Case Product_Control7.ProductID
+                CS.Buy(Product_Control7)
+
+            Case Product_Control8.ProductID
+                CS.Buy(Product_Control8)
+
+            Case Product_Control9.ProductID
+                CS.Buy(Product_Control9)
+
+            Case Product_Control10.ProductID
+                CS.Buy(Product_Control10)
+
+            Case Product_Control11.ProductID
+                CS.Buy(Product_Control11)
+
+            Case Product_Control12.ProductID
+                CS.Buy(Product_Control12)
+
+            Case Product_Control13.ProductID
+                CS.Buy(Product_Control13)
+
+            Case Product_Control14.ProductID
+                CS.Buy(Product_Control14)
+
+            Case Product_Control15.ProductID
+                CS.Buy(Product_Control15)
+
+            Case Product_Control16.ProductID
+                CS.Buy(Product_Control16)
         End Select
-        Product_Control1.buy()
+        TextBox1.Text = CS.Total.ToString("C2")
+    End Sub
+
+    Private Sub Product_Control1_DispenseProduct(i As Image) Handles Product_Control1.DispenseProduct
+        Product_PictureBox.Image = i
     End Sub
 End Class

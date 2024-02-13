@@ -4,6 +4,9 @@
     Public Property ProductPrice As Decimal
     Public Property ProductImage As Image
     Public Property PropertyCount As Integer
+
+    Public Event DispenseProduct(i As Image)
+
     Private Sub Product_Control_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         PictureBox1.Image = ProductImage
         ID_Label.Text = ProductID
@@ -12,6 +15,7 @@
     Public Sub buy()
         If PropertyCount > 0 Then
             PropertyCount -= 1
+            RaiseEvent DispenseProduct(ProductImage)
         End If
         If PropertyCount = 0 Then
             PictureBox1.Image = Nothing

@@ -2,9 +2,11 @@
 
     Public Event CoinReturnEvent(d As Integer, q As Integer, di As Integer, n As Integer)
 
+    Dim _total As Decimal
     Public ReadOnly Property Total As Decimal
         Get
-            Return (Nickels * 0.05) + (Dimes * 0.1) + (Quarters * 0.25) + Dollars
+            _total = (Nickels * 0.05) + (Dimes * 0.1) + (Quarters * 0.25) + Dollars
+            Return _total
         End Get
     End Property
     Public Property Dollars As Integer
@@ -29,5 +31,15 @@
         Quarters = 0
         Dimes = 0
         Nickels = 0
+    End Sub
+    Public Sub Buy(p As Product_Control)
+        If p.PropertyCount > 0 And p.ProductPrice <= _total Then
+            _total = _total - p.ProductPrice
+            p.buy()
+            Dollars = 0
+            Quarters = 0
+            Dimes = 0
+            Nickels = _total / 0.05
+        End If
     End Sub
 End Class
