@@ -97,7 +97,7 @@
         TextBox1.Text = CS.Total.ToString("C2")
     End Sub
 
-    Private Sub Product_Control1_DispenseProduct(i As Image) Handles Product_Control1.DispenseProduct
+    Private Sub Product_Control1_DispenseProduct(i As Image) Handles Product_Control1.DispenseProduct, Product_Control2.DispenseProduct, Product_Control3.DispenseProduct, Product_Control4.DispenseProduct, Product_Control5.DispenseProduct, Product_Control6.DispenseProduct, Product_Control7.DispenseProduct, Product_Control8.DispenseProduct, Product_Control9.DispenseProduct, Product_Control10.DispenseProduct, Product_Control11.DispenseProduct, Product_Control12.DispenseProduct, Product_Control13.DispenseProduct, Product_Control14.DispenseProduct, Product_Control15.DispenseProduct, Product_Control16.DispenseProduct
         Product_PictureBox.Image = i
     End Sub
 End Class
