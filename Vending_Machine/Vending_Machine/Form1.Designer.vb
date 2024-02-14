@@ -40,6 +40,7 @@ Partial Class Form1
         Me.Button6 = New System.Windows.Forms.Button()
         Me.ID_TextBox = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Product_PictureBox = New System.Windows.Forms.PictureBox()
         Me.Product_Control13 = New Vending_Machine.Product_Control()
         Me.Product_Control14 = New Vending_Machine.Product_Control()
         Me.Product_Control15 = New Vending_Machine.Product_Control()
@@ -56,7 +57,6 @@ Partial Class Form1
         Me.Product_Control10 = New Vending_Machine.Product_Control()
         Me.Product_Control11 = New Vending_Machine.Product_Control()
         Me.Product_Control12 = New Vending_Machine.Product_Control()
-        Me.Product_PictureBox = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -238,6 +238,16 @@ Partial Class Form1
         Me.Label2.Size = New System.Drawing.Size(23, 16)
         Me.Label2.TabIndex = 33
         Me.Label2.Text = "ID:"
+        '
+        'Product_PictureBox
+        '
+        Me.Product_PictureBox.Location = New System.Drawing.Point(869, 897)
+        Me.Product_PictureBox.Name = "Product_PictureBox"
+        Me.Product_PictureBox.Size = New System.Drawing.Size(100, 89)
+        Me.Product_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Product_PictureBox.TabIndex = 34
+        Me.Product_PictureBox.TabStop = False
+        Me.Product_PictureBox.Visible = False
         '
         'Product_Control13
         '
@@ -430,15 +440,6 @@ Partial Class Form1
         Me.Product_Control12.PropertyCount = 10
         Me.Product_Control12.Size = New System.Drawing.Size(243, 216)
         Me.Product_Control12.TabIndex = 26
-        '
-        'Product_PictureBox
-        '
-        Me.Product_PictureBox.Location = New System.Drawing.Point(869, 897)
-        Me.Product_PictureBox.Name = "Product_PictureBox"
-        Me.Product_PictureBox.Size = New System.Drawing.Size(100, 89)
-        Me.Product_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Product_PictureBox.TabIndex = 34
-        Me.Product_PictureBox.TabStop = False
         '
         'Form1
         '
