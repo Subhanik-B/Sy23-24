@@ -60,7 +60,6 @@ Partial Class Form1
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(0, 16)
         Me.Label1.TabIndex = 2
-        Me.Label1.Visible = False
         '
         'Label2
         '
@@ -69,7 +68,6 @@ Partial Class Form1
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(0, 16)
         Me.Label2.TabIndex = 5
-        Me.Label2.Visible = False
         '
         'Label3
         '
@@ -78,7 +76,6 @@ Partial Class Form1
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(0, 16)
         Me.Label3.TabIndex = 6
-        Me.Label3.Visible = False
         '
         'Label4
         '
