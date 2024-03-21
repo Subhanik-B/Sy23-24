@@ -45,6 +45,8 @@ Partial Class Form1
         DroneVendingMachine13 = New DroneVendingMachine()
         DroneVendingMachine14 = New DroneVendingMachine()
         DroneVendingMachine15 = New DroneVendingMachine()
+        Button5 = New Button()
+        Label1 = New Label()
         SuspendLayout()
         ' 
         ' ShoppingCart
@@ -296,11 +298,32 @@ Partial Class Form1
         DroneVendingMachine15.TabIndex = 22
         DroneVendingMachine15.Visible = False
         ' 
+        ' Button5
+        ' 
+        Button5.Location = New Point(484, 264)
+        Button5.Margin = New Padding(3, 2, 3, 2)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(82, 22)
+        Button5.TabIndex = 27
+        Button5.Text = "Clear Cart"
+        Button5.UseVisualStyleBackColor = True
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(572, 268)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(32, 15)
+        Label1.TabIndex = 28
+        Label1.Text = "Cart:"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(700, 338)
+        Controls.Add(Label1)
+        Controls.Add(Button5)
         Controls.Add(DroneVendingMachine11)
         Controls.Add(DroneVendingMachine12)
         Controls.Add(DroneVendingMachine13)
@@ -350,4 +373,6 @@ Partial Class Form1
     Friend WithEvents DroneVendingMachine13 As DroneVendingMachine
     Friend WithEvents DroneVendingMachine14 As DroneVendingMachine
     Friend WithEvents DroneVendingMachine15 As DroneVendingMachine
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Label1 As Label
 End Class
