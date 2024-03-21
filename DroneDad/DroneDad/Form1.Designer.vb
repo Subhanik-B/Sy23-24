@@ -238,7 +238,7 @@ Partial Class Form1
         DroneVendingMachine11.BorderStyle = BorderStyle.Fixed3D
         DroneVendingMachine11.count = 0
         DroneVendingMachine11.label = "Propellor 1"
-        DroneVendingMachine11.Location = New Point(9, 11)
+        DroneVendingMachine11.Location = New Point(9, 9)
         DroneVendingMachine11.Margin = New Padding(3, 2, 3, 2)
         DroneVendingMachine11.Name = "DroneVendingMachine11"
         DroneVendingMachine11.price = New Decimal(New Integer() {10, 0, 0, 0})
@@ -264,7 +264,7 @@ Partial Class Form1
         DroneVendingMachine13.BorderStyle = BorderStyle.Fixed3D
         DroneVendingMachine13.count = 0
         DroneVendingMachine13.label = "Propellor 3"
-        DroneVendingMachine13.Location = New Point(307, 11)
+        DroneVendingMachine13.Location = New Point(307, 9)
         DroneVendingMachine13.Margin = New Padding(3, 2, 3, 2)
         DroneVendingMachine13.Name = "DroneVendingMachine13"
         DroneVendingMachine13.price = New Decimal(New Integer() {7, 0, 0, 0})
@@ -277,7 +277,7 @@ Partial Class Form1
         DroneVendingMachine14.BorderStyle = BorderStyle.Fixed3D
         DroneVendingMachine14.count = 0
         DroneVendingMachine14.label = "Propellor 4"
-        DroneVendingMachine14.Location = New Point(458, 11)
+        DroneVendingMachine14.Location = New Point(458, 9)
         DroneVendingMachine14.Margin = New Padding(3, 2, 3, 2)
         DroneVendingMachine14.Name = "DroneVendingMachine14"
         DroneVendingMachine14.price = New Decimal(New Integer() {15, 0, 0, 0})
@@ -290,7 +290,7 @@ Partial Class Form1
         DroneVendingMachine15.BorderStyle = BorderStyle.Fixed3D
         DroneVendingMachine15.count = 0
         DroneVendingMachine15.label = "Propellor 5"
-        DroneVendingMachine15.Location = New Point(9, 106)
+        DroneVendingMachine15.Location = New Point(9, 104)
         DroneVendingMachine15.Margin = New Padding(3, 2, 3, 2)
         DroneVendingMachine15.Name = "DroneVendingMachine15"
         DroneVendingMachine15.price = New Decimal(New Integer() {5, 0, 0, 0})
