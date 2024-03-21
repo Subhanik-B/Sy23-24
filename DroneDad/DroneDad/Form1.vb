@@ -148,6 +148,7 @@ Thank you for your purchase! You have bought " + DroneVendingMachine15.count.ToS
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         TextBox1.Visible = False
+        TextBox1.Text = ""
         cost = 0
         DroneVendingMachine1.count = 0
         DroneVendingMachine2.count = 0
