@@ -57,6 +57,31 @@ Thank you for your purchase! You have bought " + DroneVendingMachine9.count.ToSt
             TextBox1.Text += "
 Thank you for your purchase! You have bought " + DroneVendingMachine10.count.ToString() + " " + DroneVendingMachine10.label
         End If
+        If (DroneVendingMachine11.count > 0) Then
+            TextBox1.Visible = True
+            TextBox1.Text += "
+Thank you for your purchase! You have bought " + DroneVendingMachine11.count.ToString() + " " + DroneVendingMachine11.label
+        End If
+        If (DroneVendingMachine12.count > 0) Then
+            TextBox1.Visible = True
+            TextBox1.Text += "
+Thank you for your purchase! You have bought " + DroneVendingMachine12.count.ToString() + " " + DroneVendingMachine12.label
+        End If
+        If (DroneVendingMachine13.count > 0) Then
+            TextBox1.Visible = True
+            TextBox1.Text += "
+Thank you for your purchase! You have bought " + DroneVendingMachine13.count.ToString() + " " + DroneVendingMachine13.label
+        End If
+        If (DroneVendingMachine14.count > 0) Then
+            TextBox1.Visible = True
+            TextBox1.Text += "
+Thank you for your purchase! You have bought " + DroneVendingMachine14.count.ToString() + " " + DroneVendingMachine14.label
+        End If
+        If (DroneVendingMachine15.count > 0) Then
+            TextBox1.Visible = True
+            TextBox1.Text += "
+Thank you for your purchase! You have bought " + DroneVendingMachine15.count.ToString() + " " + DroneVendingMachine15.label
+        End If
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -65,6 +90,11 @@ Thank you for your purchase! You have bought " + DroneVendingMachine10.count.ToS
         DroneVendingMachine3.Visible = False
         DroneVendingMachine4.Visible = False
         DroneVendingMachine5.Visible = False
+        DroneVendingMachine11.Visible = False
+        DroneVendingMachine12.Visible = False
+        DroneVendingMachine13.Visible = False
+        DroneVendingMachine14.Visible = False
+        DroneVendingMachine15.Visible = False
         DroneVendingMachine6.Visible = True
         DroneVendingMachine7.Visible = True
         DroneVendingMachine8.Visible = True
@@ -91,5 +121,28 @@ Thank you for your purchase! You have bought " + DroneVendingMachine10.count.ToS
         DroneVendingMachine8.Visible = False
         DroneVendingMachine9.Visible = False
         DroneVendingMachine10.Visible = False
+        DroneVendingMachine11.Visible = False
+        DroneVendingMachine12.Visible = False
+        DroneVendingMachine13.Visible = False
+        DroneVendingMachine14.Visible = False
+        DroneVendingMachine15.Visible = False
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        DroneVendingMachine1.Visible = False
+        DroneVendingMachine2.Visible = False
+        DroneVendingMachine3.Visible = False
+        DroneVendingMachine4.Visible = False
+        DroneVendingMachine5.Visible = False
+        DroneVendingMachine6.Visible = False
+        DroneVendingMachine7.Visible = False
+        DroneVendingMachine8.Visible = False
+        DroneVendingMachine9.Visible = False
+        DroneVendingMachine10.Visible = False
+        DroneVendingMachine11.Visible = True
+        DroneVendingMachine12.Visible = True
+        DroneVendingMachine13.Visible = True
+        DroneVendingMachine14.Visible = True
+        DroneVendingMachine15.Visible = True
     End Sub
 End Class
