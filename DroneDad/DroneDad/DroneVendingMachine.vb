@@ -1,4 +1,5 @@
 ﻿Public Class DroneVendingMachine
+    Public Property Pictore As Image
     Public Property label As String
     Public Property price As Decimal
     Public Property count As Integer
@@ -11,6 +12,7 @@
     End Sub
 
     Private Sub DroneVendingMachine_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        PictureBox1.Image = Pictore
         Label1.Text = label
         Label2.Text = price.ToString("C2")
     End Sub
