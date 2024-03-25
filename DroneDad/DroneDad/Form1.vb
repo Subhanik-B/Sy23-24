@@ -82,6 +82,11 @@ Thank you for your purchase! You have bought " + DroneVendingMachine14.count.ToS
             TextBox1.Text += "
 Thank you for your purchase! You have bought " + DroneVendingMachine15.count.ToString() + " " + DroneVendingMachine15.label
         End If
+        If (DroneVendingMachine16.count > 0) Then
+            TextBox1.Visible = True
+            TextBox1.Text += "
+Thank you for your purchase! You have bought " + DroneVendingMachine16.count.ToString() + " " + DroneVendingMachine16.label
+        End If
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
