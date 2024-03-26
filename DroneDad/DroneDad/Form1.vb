@@ -6,8 +6,6 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        cost = 0
-
         If (DroneVendingMachine1.count > 0) Then
             TextBox1.Visible = True
             TextBox1.Text = " Thank you for your purchase! You have bought " + DroneVendingMachine1.count.ToString() + " " + DroneVendingMachine1.label
