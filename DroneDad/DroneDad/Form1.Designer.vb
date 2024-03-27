@@ -234,7 +234,7 @@ Partial Class Form1
         Me.DroneVendingMachine11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.DroneVendingMachine11.count = 0
         Me.DroneVendingMachine11.label = "Carbon Fiber "
-        Me.DroneVendingMachine11.Location = New System.Drawing.Point(12, 15)
+        Me.DroneVendingMachine11.Location = New System.Drawing.Point(10, 13)
         Me.DroneVendingMachine11.Name = "DroneVendingMachine11"
         Me.DroneVendingMachine11.Pictore = Global.DroneDad.My.Resources.Resources.Blade1
         Me.DroneVendingMachine11.price = New Decimal(New Integer() {2775, 0, 0, 131072})
@@ -286,7 +286,7 @@ Partial Class Form1
         Me.DroneVendingMachine15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.DroneVendingMachine15.count = 0
         Me.DroneVendingMachine15.label = "Tri blade Toroidal Propellers"
-        Me.DroneVendingMachine15.Location = New System.Drawing.Point(11, 141)
+        Me.DroneVendingMachine15.Location = New System.Drawing.Point(10, 138)
         Me.DroneVendingMachine15.Name = "DroneVendingMachine15"
         Me.DroneVendingMachine15.Pictore = Global.DroneDad.My.Resources.Resources.Blade5
         Me.DroneVendingMachine15.price = New Decimal(New Integer() {2480, 0, 0, 131072})
