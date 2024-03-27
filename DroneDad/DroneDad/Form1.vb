@@ -1,10 +1,8 @@
 ﻿Public Class Form1
-    Public Property cost As Integer
-
+    Public Property cost As Decimal
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         ShoppingCart.Text = cost.ToString("C2")
     End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If (DroneVendingMachine1.count > 0) Then
             TextBox1.Visible = True
@@ -85,8 +83,9 @@ Thank you for your purchase! You have bought " + DroneVendingMachine15.count.ToS
             TextBox1.Text += "
 Thank you for your purchase! You have bought " + DroneVendingMachine16.count.ToString() + " " + DroneVendingMachine16.label
         End If
+        TextBox1.Text += "
+All for a grand total of " + ShoppingCart.Text
     End Sub
-
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         DroneVendingMachine1.Visible = False
         DroneVendingMachine2.Visible = False
@@ -104,15 +103,13 @@ Thank you for your purchase! You have bought " + DroneVendingMachine16.count.ToS
         DroneVendingMachine9.Visible = True
         DroneVendingMachine10.Visible = True
     End Sub
-
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DroneVendingMachine6.Visible = False
         DroneVendingMachine7.Visible = False
         DroneVendingMachine8.Visible = False
         DroneVendingMachine9.Visible = False
         DroneVendingMachine10.Visible = False
     End Sub
-
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         DroneVendingMachine1.Visible = True
         DroneVendingMachine2.Visible = True
@@ -130,7 +127,6 @@ Thank you for your purchase! You have bought " + DroneVendingMachine16.count.ToS
         DroneVendingMachine14.Visible = False
         DroneVendingMachine15.Visible = False
     End Sub
-
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         DroneVendingMachine1.Visible = False
         DroneVendingMachine2.Visible = False
@@ -148,7 +144,6 @@ Thank you for your purchase! You have bought " + DroneVendingMachine16.count.ToS
         DroneVendingMachine14.Visible = True
         DroneVendingMachine15.Visible = True
     End Sub
-
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         TextBox1.Visible = False
         TextBox1.Text = ""
