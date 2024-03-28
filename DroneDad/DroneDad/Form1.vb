@@ -15,6 +15,8 @@
 "
         If (DroneVendingMachine4.count > 0) Then TextBox1.Text += DroneVendingMachine4.label + ": " + DroneVendingMachine4.count.ToString + "
 "
+        If (DroneVendingMachine16.count > 0) Then TextBox1.Text += DroneVendingMachine16.label + ": " + DroneVendingMachine16.count.ToString + "
+"
         '        If (DroneVendingMachine1.count > 0) Then
         '            TextBox1.Visible = True
         '            TextBox1.Text = " Thank you for your purchase! You have bought " + DroneVendingMachine1.count.ToString() + " " + DroneVendingMachine1.label
