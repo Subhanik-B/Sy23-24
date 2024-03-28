@@ -15,6 +15,28 @@
 "
         If (DroneVendingMachine4.count > 0) Then TextBox1.Text += DroneVendingMachine4.label + ": " + DroneVendingMachine4.count.ToString + "
 "
+        If (DroneVendingMachine5.count > 0) Then TextBox1.Text += DroneVendingMachine5.label + ": " + DroneVendingMachine5.count.ToString + "
+"
+        If (DroneVendingMachine6.count > 0) Then TextBox1.Text += DroneVendingMachine6.label + ": " + DroneVendingMachine6.count.ToString + "
+"
+        If (DroneVendingMachine7.count > 0) Then TextBox1.Text += DroneVendingMachine7.label + ": " + DroneVendingMachine7.count.ToString + "
+"
+        If (DroneVendingMachine8.count > 0) Then TextBox1.Text += DroneVendingMachine8.label + ": " + DroneVendingMachine8.count.ToString + "
+"
+        If (DroneVendingMachine9.count > 0) Then TextBox1.Text += DroneVendingMachine9.label + ": " + DroneVendingMachine9.count.ToString + "
+"
+        If (DroneVendingMachine10.count > 0) Then TextBox1.Text += DroneVendingMachine10.label + ": " + DroneVendingMachine10.count.ToString + "
+"
+        If (DroneVendingMachine11.count > 0) Then TextBox1.Text += DroneVendingMachine11.label + ": " + DroneVendingMachine11.count.ToString + "
+"
+        If (DroneVendingMachine12.count > 0) Then TextBox1.Text += DroneVendingMachine12.label + ": " + DroneVendingMachine12.count.ToString + "
+"
+        If (DroneVendingMachine13.count > 0) Then TextBox1.Text += DroneVendingMachine13.label + ": " + DroneVendingMachine13.count.ToString + "
+"
+        If (DroneVendingMachine14.count > 0) Then TextBox1.Text += DroneVendingMachine14.label + ": " + DroneVendingMachine14.count.ToString + "
+"
+        If (DroneVendingMachine15.count > 0) Then TextBox1.Text += DroneVendingMachine15.label + ": " + DroneVendingMachine15.count.ToString + "
+"
         If (DroneVendingMachine16.count > 0) Then TextBox1.Text += DroneVendingMachine16.label + ": " + DroneVendingMachine16.count.ToString + "
 "
         '        If (DroneVendingMachine1.count > 0) Then
@@ -176,5 +198,6 @@
         DroneVendingMachine13.count = 0
         DroneVendingMachine14.count = 0
         DroneVendingMachine15.count = 0
+        DroneVendingMachine16.count = 0
     End Sub
 End Class
