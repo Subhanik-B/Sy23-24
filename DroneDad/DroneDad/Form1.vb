@@ -5,7 +5,16 @@
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         TextBox1.Visible = True
-        If (DroneVendingMachine1.count > 0) Then TextBox1.Text += DroneVendingMachine1.count.ToString
+        TextBox1.Text = "Thank you for your purchase. You have bought: 
+"
+        If (DroneVendingMachine1.count > 0) Then TextBox1.Text += DroneVendingMachine1.label + ": " + DroneVendingMachine1.count.ToString + "
+"
+        If (DroneVendingMachine2.count > 0) Then TextBox1.Text += DroneVendingMachine2.label + ": " + DroneVendingMachine2.count.ToString + "
+"
+        If (DroneVendingMachine3.count > 0) Then TextBox1.Text += DroneVendingMachine3.label + ": " + DroneVendingMachine3.count.ToString + "
+"
+        If (DroneVendingMachine4.count > 0) Then TextBox1.Text += DroneVendingMachine4.label + ": " + DroneVendingMachine4.count.ToString + "
+"
         '        If (DroneVendingMachine1.count > 0) Then
         '            TextBox1.Visible = True
         '            TextBox1.Text = " Thank you for your purchase! You have bought " + DroneVendingMachine1.count.ToString() + " " + DroneVendingMachine1.label
