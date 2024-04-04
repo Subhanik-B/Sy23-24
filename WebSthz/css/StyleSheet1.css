@@ -1,6 +1,10 @@
 ﻿body{
-    background-color:#ff0000;
+    background-color:purple;
 }   
 h1 {
     font-size: 60px;
+}
+.Dorge{
+    color: blue;
+    font-size: 90px;
 }
