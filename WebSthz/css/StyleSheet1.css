@@ -1,10 +1,21 @@
 ﻿body{
+<<<<<<< HEAD
     background-color:purple;
+=======
+    background-color:#4a476c;
+>>>>>>> 23db9fcfaf8297da22484864ce801e1bf2e0339a
 }   
 h1 {
     font-size: 60px;
 }
+<<<<<<< HEAD
 .Dorge{
     color: blue;
     font-size: 90px;
 }
+=======
+a{
+    color: lightpink;
+    font-size: 30px;
+}
+>>>>>>> 23db9fcfaf8297da22484864ce801e1bf2e0339a
