@@ -53,3 +53,11 @@ p{
     font-family: 'Trebuchet MS';
     font-size:large;
 }
+.a {
+    height :60px; 
+    width: 80px;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
