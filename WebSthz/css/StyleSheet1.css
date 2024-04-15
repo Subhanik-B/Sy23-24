@@ -1,14 +1,33 @@
 ﻿body{
-    background-color:#4a476c;
+    background-color:#FFF8DC;
 }   
 h1 {
-    font-size: 60px;
+    font-size: 30px;
 }
 
 a {
     color: lightpink;
     font-size: 30px;
 }
+
+p {
+    color: black;
+    font-family: 'Trebuchet MS';
+    font-size: large;
+}
+
+.a {
+    height: 60px;
+    width: 80px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+
+
     /* Meun Bar
 
 /* Add a black background color to the top navigation */
@@ -48,16 +67,4 @@ a {
 
 
 /*End Menu Bar*/
-p{
-    color:black;
-    font-family: 'Trebuchet MS';
-    font-size:large;
-}
-.a {
-    height :60px; 
-    width: 80px;
-}
-img{
-    height: 100px;
-    width: 100px;
-}
+
