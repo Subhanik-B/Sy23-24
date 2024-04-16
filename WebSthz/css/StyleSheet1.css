@@ -27,10 +27,13 @@ img {
 }
 
 .k {
-    color: #FFF8DC
+    color: #FFF8DC;
 }
 
-
+.r {
+    color: #FFF8DC;
+    font-size: 15px;
+}
 
     /* Meun Bar
 
@@ -68,7 +71,5 @@ img {
         background-color: LightPink;
         color: white;
     }
-
-
 /*End Menu Bar*/
 
