@@ -39,6 +39,10 @@
 "
         If (DroneVendingMachine16.count > 0) Then TextBox1.Text += DroneVendingMachine16.label + ": " + DroneVendingMachine16.count.ToString + "
 "
+        If (cost = 0) Then
+            TextBox1.Text += "Nothing
+"
+        End If
         TextBox1.Text += "All for a grand total of: " + cost.ToString("C2")
         cost = 0
         DroneVendingMachine1.count = 0
