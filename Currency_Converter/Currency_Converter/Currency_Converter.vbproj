@@ -8,6 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="-1x-1.jpg" />
+    <None Remove="Banknote_of_india.png" />
+    <None Remove="CY267WSWXZINZDOVPWDCKLYFSE.jpg" />
+    <None Remove="GettyImages-511899633-575af3a3a80c43918649de2db80c1a41.jpg" />
+    <None Remove="GettyImages-696622564-674ca3ef12af48cf85d27874dc7cc263.jpg" />
+    <None Remove="images %286%29.jfif" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Import Include="System.Windows" />
     <Import Include="System.Windows.Controls" />
     <Import Include="System.Windows.Data" />
@@ -17,6 +26,15 @@
     <Import Include="System.Windows.Media.Imaging" />
     <Import Include="System.Windows.Navigation" />
     <Import Include="System.Windows.Shapes" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="-1x-1.jpg" />
+    <Resource Include="Banknote_of_india.png" />
+    <Resource Include="CY267WSWXZINZDOVPWDCKLYFSE.jpg" />
+    <Resource Include="GettyImages-511899633-575af3a3a80c43918649de2db80c1a41.jpg" />
+    <Resource Include="GettyImages-696622564-674ca3ef12af48cf85d27874dc7cc263.jpg" />
+    <Resource Include="images (6).jfif" />
   </ItemGroup>
 
 </Project>

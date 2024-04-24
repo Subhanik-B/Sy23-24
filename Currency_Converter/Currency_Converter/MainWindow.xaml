@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid x:Name="Form1">
-        <TextBox x:Name="USD" HorizontalAlignment="Left" Margin="61,167,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
-        <Label Content="To" HorizontalAlignment="Left" Margin="202,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.398,-0.562"/>
-        <Button x:Name="Pesos" Content="Pesos" HorizontalAlignment="Left" Margin="238,126,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.132,-0.912"/>
-        <Button x:Name="Australian_Dollar" Content="Australian Dollar" HorizontalAlignment="Left" Margin="299,166,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="Yuan" Content="Yuan" HorizontalAlignment="Left" Margin="241,197,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="Pounds" Content="Pounds" HorizontalAlignment="Left" Margin="405,197,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="Rupees" Content="Rupees" HorizontalAlignment="Left" Margin="326,125,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+        <TextBox x:Name="USD" HorizontalAlignment="Left" Margin="22,67,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="To" HorizontalAlignment="Left" Margin="165,63,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.398,-0.562"/>
+        <Button x:Name="Pesos" Content="Pesos" HorizontalAlignment="Left" Margin="263,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.132,-0.912"/>
+        <Button x:Name="Australian_Dollar" Content="Australian Dollar" HorizontalAlignment="Left" Margin="497,67,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Yuan" Content="Yuan" HorizontalAlignment="Left" Margin="207,67,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Pounds" Content="Pounds" HorizontalAlignment="Left" Margin="438,67,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Rupees" Content="Rupees" HorizontalAlignment="Left" Margin="316,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -23,10 +23,16 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="Euros" Content="Euros" HorizontalAlignment="Left" Margin="415,126,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="Eeper" HorizontalAlignment="Left" Margin="505,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0"/>
-        <Button x:Name="Clear" Content="Clear Conversion" HorizontalAlignment="Left" Margin="297,234,0,0" VerticalAlignment="Top"/>
-        <Label Content="USD" HorizontalAlignment="Left" Margin="92,136,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="LabelChange" Content="" HorizontalAlignment="Left" Margin="538,136,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Euros" Content="Euros" HorizontalAlignment="Center" Margin="0,67,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Eeper" HorizontalAlignment="Left" Margin="670,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0"/>
+        <Button x:Name="Clear" Content="Clear Conversion" HorizontalAlignment="Left" Margin="323,0,0,0" VerticalAlignment="Center"/>
+        <Label Content="USD" HorizontalAlignment="Left" Margin="22,41,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LabelChange" Content="" HorizontalAlignment="Left" Margin="696,36,0,0" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="31" Margin="207,98,0,0" VerticalAlignment="Top" Width="30" Source="/-1x-1.jpg" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="31" Margin="263,98,0,0" VerticalAlignment="Top" Width="34" Source="/CY267WSWXZINZDOVPWDCKLYFSE.jpg" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="31" Margin="320,98,0,0" VerticalAlignment="Top" Width="37" Source="/Banknote_of_india.png" Stretch="Fill"/>
+        <Image HorizontalAlignment="Center" Height="31" Margin="0,98,0,0" VerticalAlignment="Top" Width="34" Source="/images (6).jfif" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="31" Margin="438,98,0,0" VerticalAlignment="Top" Width="43" Source="/GettyImages-696622564-674ca3ef12af48cf85d27874dc7cc263.jpg" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="31" Margin="497,98,0,0" VerticalAlignment="Top" Width="46" Source="/GettyImages-511899633-575af3a3a80c43918649de2db80c1a41.jpg" Stretch="Fill"/>
     </Grid>
 </Window>
