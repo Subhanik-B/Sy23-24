@@ -52,6 +52,7 @@
             Display.Content = "Capricorn"
             Capricorn.Visibility = Visibility.Visible
         End If
+
         'Display.Content = Calendar.SelectedDate.Value
     End Sub
 End Class
