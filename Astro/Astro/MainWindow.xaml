@@ -1,0 +1,27 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Astro"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Calendar x:Name="Calendar" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Buton" Content="Button" HorizontalAlignment="Left" Margin="217,16,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Display" Content="Label" HorizontalAlignment="Left" Margin="217,41,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="Aquarius" HorizontalAlignment="Left" Height="100" Margin="217,78,0,0" VerticalAlignment="Top" Width="100" Stretch="Fill" Source="/Aquarius.jfif" Visibility="Hidden"/>
+        <Image x:Name="Pisces" HorizontalAlignment="Left" Height="100" Margin="217,78,0,0" VerticalAlignment="Top" Width="100" Stretch="Fill" Source="/Pisces.jpg" Visibility="Hidden"/>
+        <Image x:Name="Aries" HorizontalAlignment="Left" Height="100" Margin="217,78,0,0" VerticalAlignment="Top" Width="100" Stretch="Fill" Source="/images (7).jfif" Visibility="Hidden"/>
+        <Image x:Name="Taurus" HorizontalAlignment="Left" Height="100" Margin="217,78,0,0" VerticalAlignment="Top" Width="100" Stretch="Fill" Source="/Taurus.jpg" Visibility="Hidden"/>
+        <Image x:Name="Gemini" HorizontalAlignment="Left" Height="100" Margin="217,78,0,0" VerticalAlignment="Top" Width="100" Stretch="Fill" Source="/gemini-twins.jpg" Visibility="Hidden"/>
+        <Image x:Name="Cancer" HorizontalAlignment="Left" Height="100" Margin="217,78,0,0" VerticalAlignment="Top" Width="100" Source="/Crab.jpg" Stretch="Fill" Visibility="Hidden"/>
+        <Image x:Name="Leo" HorizontalAlignment="Left" Height="100" Margin="217,78,0,0" VerticalAlignment="Top" Width="100" Stretch="Fill" Source="/Leo.jpg" Visibility="Hidden"/>
+        <Image x:Name="Virgo" HorizontalAlignment="Left" Height="100" Margin="217,78,0,0" VerticalAlignment="Top" Width="100" Stretch="Fill" Source="/Virgo.jpg" Visibility="Hidden"/>
+        <Image x:Name="Libra" HorizontalAlignment="Left" Height="100" Margin="217,78,0,0" VerticalAlignment="Top" Width="100" Stretch="Fill" Source="/Libra.jpg" Visibility="Hidden"/>
+        <Image x:Name="Scorpio" HorizontalAlignment="Left" Height="100" Margin="217,78,0,0" VerticalAlignment="Top" Width="100" Stretch="Fill" Source="/Scorpio.jpg" Visibility="Hidden"/>
+        <Image x:Name="Sagittarius" HorizontalAlignment="Left" Height="100" Margin="217,78,0,0" VerticalAlignment="Top" Width="100" Stretch="Fill" Source="/Sagittarius.jpg" Visibility="Hidden"/>
+        <Image x:Name="Capricorn" HorizontalAlignment="Left" Height="100" Margin="217,78,0,0" VerticalAlignment="Top" Width="100" Source="/Capricorn.jpg" Stretch="Fill" Visibility="Hidden"/>
+
+    </Grid>
+</Window>

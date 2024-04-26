@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Astro</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Aquarius.jfif" />
+    <None Remove="Capricorn.jpg" />
+    <None Remove="Crab.jpg" />
+    <None Remove="gemini-twins.jpg" />
+    <None Remove="images %287%29.jfif" />
+    <None Remove="Leo.jpg" />
+    <None Remove="Libra.jpg" />
+    <None Remove="Pisces.jpg" />
+    <None Remove="Sagittarius.jpg" />
+    <None Remove="Scorpio.jpg" />
+    <None Remove="Taurus.jpg" />
+    <None Remove="Virgo.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Import Include="System.Windows" />
+    <Import Include="System.Windows.Controls" />
+    <Import Include="System.Windows.Data" />
+    <Import Include="System.Windows.Documents" />
+    <Import Include="System.Windows.Input" />
+    <Import Include="System.Windows.Media" />
+    <Import Include="System.Windows.Media.Imaging" />
+    <Import Include="System.Windows.Navigation" />
+    <Import Include="System.Windows.Shapes" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Aquarius.jfif" />
+    <Resource Include="Capricorn.jpg" />
+    <Resource Include="Crab.jpg" />
+    <Resource Include="gemini-twins.jpg" />
+    <Resource Include="images (7).jfif" />
+    <Resource Include="Leo.jpg" />
+    <Resource Include="Libra.jpg" />
+    <Resource Include="Pisces.jpg" />
+    <Resource Include="Sagittarius.jpg" />
+    <Resource Include="Scorpio.jpg" />
+    <Resource Include="Taurus.jpg" />
+    <Resource Include="Virgo.jpg" />
+  </ItemGroup>
+
+</Project>
