@@ -98,7 +98,7 @@ Class MainWindow
     End Sub
 
     Private Sub Rect2_MouseDown(sender As Object, e As MouseButtonEventArgs) Handles Rect2.MouseDown
-        grad2 = Color.FromRgb(Red.Value, Green.Value, Blue.Value)
-        sender.fill = New SolidColorBrush(grad2)
+        grad1 = Color.FromRgb(Red.Value, Green.Value, Blue.Value)
+        sender.fill = New SolidColorBrush(grad1)
     End Sub
 End Class
