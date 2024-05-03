@@ -1,4 +1,9 @@
-﻿Class MainWindow
+﻿Imports Microsoft.Win32
+Imports System.IO
+
+Class MainWindow
+    Dim grad1 As Color
+    Dim grad2 As Color
     Private Sub Drawing_Canvas_MouseMove(sender As Object, e As MouseEventArgs) Handles Drawing_Canvas.MouseMove
         If Shape_Label.Content = "Ellipse" Then
             Dim el As New Ellipse
@@ -63,5 +68,32 @@
     End Sub
     Private Sub Rectangle_Click(sender As Object, e As RoutedEventArgs) Handles Rectangle.Click
         Shape_Label.Content = sender.Content
+    End Sub
+    Public Sub ExportToPng(ByVal surface As Canvas)
+        Dim sfd As New SaveFileDialog
+        sfd.ShowDialog()
+        If sfd.FileName Is Nothing Then Return
+        Dim transform As Transform = surface.LayoutTransform
+        surface.LayoutTransform = Nothing
+        Dim size As Size = New Size(surface.Width, surface.Height)
+        surface.Measure(size)
+        surface.Arrange(New Rect(size))
+        Dim renderBitmap As RenderTargetBitmap = New RenderTargetBitmap(CInt(size.Width), CInt(size.Height), 96.0R, 96.0R, PixelFormats.Pbgra32)
+        renderBitmap.Render(surface)
+        Using outStream As FileStream = New FileStream(sfd.FileName & ".png", FileMode.Create)
+            Dim encoder As PngBitmapEncoder = New PngBitmapEncoder()
+            encoder.Frames.Add(BitmapFrame.Create(renderBitmap))
+            encoder.Save(outStream)
+        End Using
+        surface.LayoutTransform = transform
+        Canvas.SetLeft(Drawing_Canvas, 147)
+        Canvas.SetTop(Drawing_Canvas, 0)
+    End Sub
+    Private Sub SaveButton_Click(sender As Object, e As RoutedEventArgs) Handles SaveButton.Click
+        ExportToPng(Drawing_Canvas)
+    End Sub
+    Private Sub Rect1_MouseDown(sender As Object, e As MouseButtonEventArgs) Handles Rect1.MouseDown
+        grad1 = Color.FromRgb(Red.Value, Green.Value, Blue.Value)
+        sender.fill = New SolidColorBrush(grad1)
     End Sub
 End Class
