@@ -96,9 +96,14 @@ Class MainWindow
         grad1 = Color.FromRgb(Red.Value, Green.Value, Blue.Value)
         sender.fill = New SolidColorBrush(grad1)
     End Sub
-
     Private Sub Rect2_MouseDown(sender As Object, e As MouseButtonEventArgs) Handles Rect2.MouseDown
         grad1 = Color.FromRgb(Red.Value, Green.Value, Blue.Value)
         sender.fill = New SolidColorBrush(grad1)
+    End Sub
+    Private Sub AngleSlider_ValueChanged(sender As Object, e As RoutedPropertyChangedEventArgs(Of Double)) Handles AngleSlider.ValueChanged
+        Color1.Fill = New LinearGradientBrush(grad1, grad2, AngleSlider.Value)
+    End Sub
+
+    Private Sub Bowtie_Click(sender As Object, e As RoutedEventArgs) Handles Bowtie.Click
     End Sub
 End Class

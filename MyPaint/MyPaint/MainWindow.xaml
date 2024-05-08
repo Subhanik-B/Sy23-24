@@ -26,16 +26,17 @@
         <Button x:Name="Ellipse" Content="Ellipse" HorizontalAlignment="Left" Margin="6,220,0,0" VerticalAlignment="Top" Width="47"/>
         <Button x:Name="Rectangle" Content="Rectangle" HorizontalAlignment="Left" Margin="66,220,0,0" VerticalAlignment="Top" Width="56"/>
         <Label x:Name="Shape_Label" Content="Label" HorizontalAlignment="Left" Margin="66,16,0,0" VerticalAlignment="Top" Height="30" Width="76"/>
-        <Button x:Name="SaveButton" Content="Save" HorizontalAlignment="Left" Margin="9,375,0,0" VerticalAlignment="Top" Width="118"/>
-        <Slider x:Name="Green" HorizontalAlignment="Left" Margin="8,299,0,0" VerticalAlignment="Top" Width="120" Maximum="255"/>
-        <Slider x:Name="Red" HorizontalAlignment="Left" Margin="8,276,0,0" VerticalAlignment="Top" Width="120" Maximum="255"/>
-        <Slider x:Name="Blue" HorizontalAlignment="Left" Margin="8,321,0,0" VerticalAlignment="Top" Width="120" Maximum="255"/>
+        <Button x:Name="SaveButton" Content="Save" HorizontalAlignment="Left" Margin="10,391,0,0" VerticalAlignment="Top" Width="118"/>
+        <Slider x:Name="Green" HorizontalAlignment="Left" Margin="8,299,0,0" VerticalAlignment="Top" Width="90" Maximum="255"/>
+        <Slider x:Name="Red" HorizontalAlignment="Left" Margin="8,276,0,0" VerticalAlignment="Top" Width="90" Maximum="255"/>
+        <Slider x:Name="Blue" HorizontalAlignment="Left" Margin="8,321,0,0" VerticalAlignment="Top" Width="90" Maximum="255"/>
         <Rectangle x:Name="Rect1" HorizontalAlignment="Left" Height="29" Margin="8,245,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Fill="#FFFF8100"/>
         <Rectangle x:Name="Rect2" HorizontalAlignment="Left" Height="29" Margin="39,245,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Fill="#FFFF8100"/>
-        <Label Content="R" HorizontalAlignment="Left" Margin="125,267,0,0" VerticalAlignment="Top"/>
-        <Label Content="G" HorizontalAlignment="Left" Margin="125,295,0,0" VerticalAlignment="Top"/>
-        <Label Content="B" HorizontalAlignment="Left" Margin="125,317,0,0" VerticalAlignment="Top"/>
-        <Slider x:Name="AngleSlider" HorizontalAlignment="Left" Margin="8,343,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Red1" Content="R" HorizontalAlignment="Left" Margin="94,268,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Green1" Content="G" HorizontalAlignment="Left" Margin="95,294,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Blue1" Content="B" HorizontalAlignment="Left" Margin="96,317,0,0" VerticalAlignment="Top"/>
+        <Slider x:Name="AngleSlider" HorizontalAlignment="Left" Margin="8,343,0,0" VerticalAlignment="Top" Width="120" Maximum="360" Minimum="-360"/>
+        <Button x:Name="Bowtie" Content="Load Shape" HorizontalAlignment="Left" Margin="10,371,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
