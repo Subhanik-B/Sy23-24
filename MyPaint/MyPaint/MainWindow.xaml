@@ -36,7 +36,9 @@
         <Label x:Name="Green1" Content="G" HorizontalAlignment="Left" Margin="95,294,0,0" VerticalAlignment="Top"/>
         <Label x:Name="Blue1" Content="B" HorizontalAlignment="Left" Margin="96,317,0,0" VerticalAlignment="Top"/>
         <Slider x:Name="AngleSlider" HorizontalAlignment="Left" Margin="8,343,0,0" VerticalAlignment="Top" Width="120" Maximum="360" Minimum="-360"/>
-        <Button x:Name="Bowtie" Content="Load Shape" HorizontalAlignment="Left" Margin="10,371,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Bowtie" HorizontalAlignment="Left" Margin="10,366,0,0" VerticalAlignment="Top" Height="20" Width="29">
+            <Image x:Name="Cheese" Height="17" Width="28" Source="/Cheese.jpg" Stretch="Fill"/>
+        </Button>
 
     </Grid>
 </Window>

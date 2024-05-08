@@ -29,6 +29,21 @@ Class MainWindow
                 Drawing_Canvas.Children.Add(el)
             End If
         End If
+        If Shape_Label.Content = "picture" Then
+
+            Dim myImageBrush As New ImageBrush(Cheese.Source)
+            Dim myCanvas As New Canvas
+            myCanvas.Width = Width_Slider.Value
+            myCanvas.Height = Height_Slider.Value
+            myCanvas.Background = myImageBrush
+            Dim p As Point = Mouse.GetPosition(Drawing_Canvas)
+            Canvas.SetLeft(myCanvas, p.X)
+            Canvas.SetTop(myCanvas, p.Y)
+            If e.LeftButton = MouseButtonState.Pressed Then
+                Drawing_Canvas.Children.Add(myCanvas)
+            End If
+
+        End If
     End Sub
     'Color Changer
     Private Sub Color1_Copy_MouseLeftButtonDown(sender As Object, e As MouseButtonEventArgs) Handles Color1_Copy.MouseLeftButtonDown
@@ -105,5 +120,6 @@ Class MainWindow
     End Sub
 
     Private Sub Bowtie_Click(sender As Object, e As RoutedEventArgs) Handles Bowtie.Click
+        Shape_Label.Content = "picture"
     End Sub
 End Class
