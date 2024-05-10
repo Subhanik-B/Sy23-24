@@ -29,8 +29,7 @@ Class MainWindow
                 Drawing_Canvas.Children.Add(el)
             End If
         End If
-        If Shape_Label.Content = "picture" Then
-
+        If Shape_Label.Content = "Cheese" Then
             Dim myImageBrush As New ImageBrush(Cheese.Source)
             Dim myCanvas As New Canvas
             myCanvas.Width = Width_Slider.Value
@@ -42,7 +41,50 @@ Class MainWindow
             If e.LeftButton = MouseButtonState.Pressed Then
                 Drawing_Canvas.Children.Add(myCanvas)
             End If
-
+        End If
+        If Shape_Label.Content = "Dog" Then
+            Dim myImageBrush As New ImageBrush(DorgMgFlorg.Source)
+            Dim myCanvas As New Canvas
+            myCanvas.Width = Width_Slider.Value
+            myCanvas.Height = Height_Slider.Value
+            myCanvas.Background = myImageBrush
+            Dim p As Point = Mouse.GetPosition(Drawing_Canvas)
+            Canvas.SetLeft(myCanvas, p.X)
+            Canvas.SetTop(myCanvas, p.Y)
+            If e.LeftButton = MouseButtonState.Pressed Then
+                Drawing_Canvas.Children.Add(myCanvas)
+            End If
+        End If
+        If Shape_Label.Content = "Polygon" Then
+            Dim r As New Polygon
+            r.Fill = Color1.Fill
+            r.Points.Add(New Point(0 * Width_Slider.Value, 7 * Width_Slider.Value))
+            r.Points.Add(New Point(3 * Width_Slider.Value, 9 * Width_Slider.Value))
+            r.Points.Add(New Point(6 * Width_Slider.Value, 5 * Width_Slider.Value))
+            r.Points.Add(New Point(5 * Width_Slider.Value, 2 * Width_Slider.Value))
+            r.Points.Add(New Point(3 * Width_Slider.Value, 5 * Width_Slider.Value))
+            r.Points.Add(New Point(-3 * Width_Slider.Value, -3 * Width_Slider.Value))
+            r.Points.Add(New Point(-6 * Width_Slider.Value, 4 * Width_Slider.Value))
+            r.Points.Add(New Point(-4 * Width_Slider.Value, 8 * Width_Slider.Value))
+            Dim p As Point = Mouse.GetPosition(Drawing_Canvas)
+            Canvas.SetLeft(r, p.X)
+            Canvas.SetTop(r, p.Y)
+            If e.LeftButton = MouseButtonState.Pressed Then
+                Drawing_Canvas.Children.Add(r)
+            End If
+        End If
+        If Shape_Label.Content = "Custom" Then
+            Dim r As New Polygon
+            r.Fill = Color1.Fill
+            Dim p As Point = Mouse.GetPosition(Drawing_Canvas)
+            r.Points.Add(p)
+            r.Points.Add(New Point(1 * Width_Slider.Value, 0))
+            r.Points.Add(New Point(0, 1 * Width_Slider.Value))
+            Canvas.SetLeft(r, p.X)
+            Canvas.SetTop(r, p.Y)
+            If e.LeftButton = MouseButtonState.Pressed Then
+                Drawing_Canvas.Children.Add(r)
+            End If
         End If
     End Sub
     'Color Changer
@@ -118,8 +160,18 @@ Class MainWindow
     Private Sub AngleSlider_ValueChanged(sender As Object, e As RoutedPropertyChangedEventArgs(Of Double)) Handles AngleSlider.ValueChanged
         Color1.Fill = New LinearGradientBrush(grad1, grad2, AngleSlider.Value)
     End Sub
-
     Private Sub Bowtie_Click(sender As Object, e As RoutedEventArgs) Handles Bowtie.Click
-        Shape_Label.Content = "picture"
+        Shape_Label.Content = "Cheese"
+    End Sub
+
+    Private Sub Bowtie2_Click(sender As Object, e As RoutedEventArgs) Handles Polygon.Click
+        Shape_Label.Content = "Polygon"
+
+    End Sub
+    Private Sub Dorg_Click(sender As Object, e As RoutedEventArgs) Handles Dorg.Click
+        Shape_Label.Content = "Dog"
+    End Sub
+    Private Sub Custom_Click(sender As Object, e As RoutedEventArgs) Handles Custom.Click
+        Shape_Label.Content = "Custom"
     End Sub
 End Class

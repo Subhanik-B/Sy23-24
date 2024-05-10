@@ -134,5 +134,8 @@
   <ItemGroup>
     <Resource Include="Cheese.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ASHH5bDmsp6wnK6mEfZdcU.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
