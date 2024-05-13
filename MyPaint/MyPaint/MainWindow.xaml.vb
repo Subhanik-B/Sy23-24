@@ -1,5 +1,6 @@
 ﻿Imports Microsoft.Win32
 Imports System.IO
+Imports System.Windows.Threading
 
 Class MainWindow
     Dim grad1 As Color
@@ -163,7 +164,6 @@ Class MainWindow
     Private Sub Bowtie_Click(sender As Object, e As RoutedEventArgs) Handles Bowtie.Click
         Shape_Label.Content = "Cheese"
     End Sub
-
     Private Sub Bowtie2_Click(sender As Object, e As RoutedEventArgs) Handles Polygon.Click
         Shape_Label.Content = "Polygon"
 
@@ -173,5 +173,20 @@ Class MainWindow
     End Sub
     Private Sub Custom_Click(sender As Object, e As RoutedEventArgs) Handles Custom.Click
         Shape_Label.Content = "Custom"
+    End Sub
+    Private Sub Drawing_Canvas_Loaded(sender As Object, e As RoutedEventArgs) Handles Drawing_Canvas.Loaded
+        Dim dt As DispatcherTimer = New DispatcherTimer()
+        AddHandler dt.Tick, AddressOf DispatcherTimer_Tick
+
+        dt.Interval = New TimeSpan(0, 0, 1)
+        dt.Start()
+    End Sub
+    Public Sub DispatcherTimer_Tick(ByVal sender As Object, ByVal e As EventArgs)
+        For Each u In Drawing_Canvas.Children
+            If u.name = "" Then
+                Canvas.SetLeft(u, Canvas.GetLeft(u) + AngleSlider.Value)
+            End If
+
+        Next
     End Sub
 End Class
